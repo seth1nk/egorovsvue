@@ -19,8 +19,8 @@
         <li><router-link to="/" class="button">Главная</router-link></li>
         <li><router-link to="/about" class="button">О нас</router-link></li>
         <li><router-link to="/contact" class="button">Контакты</router-link></li>
-        <li v-if="isAuthenticated"><router-link to="/artists" class="button">Исполнители</router-link></li>
-        <li v-if="isAuthenticated"><router-link to="/audiotracks" class="button">Аудиотреки</router-link></li>
+        <li v-if="isAuthenticated"><router-link to="/bicycles" class="button">Велосипеды</router-link></li>
+        <li v-if="isAuthenticated"><router-link to="/repair-services" class="button">Услуги</router-link></li>
         <li v-if="!isAuthenticated"><router-link to="/login" class="button">Войти</router-link></li>
         <li v-if="!isAuthenticated"><router-link to="/register" class="button">Зарегистрироваться</router-link></li>
         <li v-if="isAuthenticated" class="welcome-message"><span>Добро пожаловать, {{ username }}</span></li>

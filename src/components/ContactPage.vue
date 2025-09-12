@@ -8,7 +8,7 @@
         <div class="text-block">
           <h2 class="text-2xl font-bold text-center mb-4">О нашем сервисе</h2>
           <p class="fs-5 text-center">
-            Сервис "Аудиотека" — это платформа для прослушивания и покупки музыки. Мы предлагаем эксклюзивные музыкальные коллекции и кураторские плейлисты для всех жанров и вкусов.
+            Сервис по ремонту велосипедов — это профессиональная мастерская, где мы возвращаем вашим велосипедам идеальное состояние. Мы предлагаем широкий спектр услуг и индивидуальный подход.
           </p>
         </div>
       </div>
@@ -37,16 +37,16 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="text-center fade-in" :style="{ animationDelay: '0.2s' }">
-            <h3 class="text-xl font-bold mb-2">+ Персонализированные плейлисты</h3>
-            <p class="text-gray-600">Кураторские подборки музыки под ваше настроение и стиль жизни.</p>
+            <h3 class="text-xl font-bold mb-2">+ Ремонт и настройка</h3>
+            <p class="text-gray-600">Полный спектр услуг по ремонту и настройке велосипедов любого типа.</p>
           </div>
           <div class="text-center fade-in" :style="{ animationDelay: '0.4s' }">
-            <h3 class="text-xl font-bold mb-2">+ Эксклюзивные релизы</h3>
-            <p class="text-gray-600">Новые треки и альбомы, доступные только на нашей платформе.</p>
+            <h3 class="text-xl font-bold mb-2">+ Замена запчастей</h3>
+            <p class="text-gray-600">Используем только качественные запчасти от проверенных производителей.</p>
           </div>
           <div class="text-center fade-in" :style="{ animationDelay: '0.6s' }">
-            <h3 class="text-xl font-bold mb-2">+ Поддержка артистов</h3>
-            <p class="text-gray-600">Сотрудничество с молодыми музыкантами для продвижения их творчества.</p>
+            <h3 class="text-xl font-bold mb-2">+ Техническое обслуживание</h3>
+            <p class="text-gray-600">Регулярное обслуживание для поддержания вашего велосипеда в отличном состоянии.</p>
           </div>
         </div>
       </div>
@@ -62,39 +62,39 @@ export default {
       employees: [
         {
           name: 'Алексей Ковалёв',
-          role: 'Куратор музыкальных подборок',
+          role: 'Мастер по ремонту велосипедов',
           experience: '7 лет',
-          image: '/images/a1.png'
+          image: '/images/a1.jpg'
         },
         {
           name: 'Екатерина Смирнова',
-          role: 'Специалист по работе с артистами',
+          role: 'Специалист по подбору запчастей',
           experience: '5 лет',
           image: '/images/a2.jpg'
         },
         {
           name: 'Дмитрий Попов',
-          role: 'Менеджер по контенту',
+          role: 'Менеджер по клиентскому сервису',
           experience: '9 лет',
           image: '/images/a3.png'
         },
         {
           name: 'Анастасия Лебедева',
-          role: 'Специалист по продвижению музыки',
+          role: 'Техник по настройке трансмиссии',
           experience: '4 года',
-          image: '/images/a4.png'
+          image: '/images/a4.jpeg'
         },
         {
           name: 'Мария Зайцева',
-          role: 'Менеджер по клиентскому сервису',
+          role: 'Специалист по обслуживанию',
           experience: '6 лет',
-          image: '/images/a5.png'
+          image: '/images/a5.jpg'
         },
         {
           name: 'Сергей Иванов',
-          role: 'Технический специалист по аудио',
+          role: 'Мастер по ремонту колес',
           experience: '3 года',
-          image: '/images/a6.jpg'
+          image: '/images/a6.png'
         }
       ]
     };
@@ -252,7 +252,7 @@ body {
 
 @media (min-width: 768px) {
   .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(384px, minmax(0, 1fr));
   }
 }
 

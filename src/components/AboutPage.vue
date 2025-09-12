@@ -1,79 +1,79 @@
 <template>
   <main>
     <div class="container">
-      <h1 class="page-title">Об аудиотеке</h1>
+      <h1 class="page-title">О сервисе по ремонту велосипедов</h1>
 
-      <!-- Блок 1: Разнообразие жанров -->
+      <!-- Блок 1: Широкий спектр услуг -->
       <div class="content-block fade-in" ref="block1">
         <div class="flex flex-col md:flex-row items-center gap-6">
           <div class="md:w-1/2 text-block">
-            <h2 class="text-2xl font-bold mb-4">Разнообразие жанров</h2>
+            <h2 class="text-2xl font-bold mb-4">Широкий спектр услуг</h2>
             <p class="fs-5">
-              От классической музыки до современного хип-хопа, от рока до электроники — у нас есть треки для каждого настроения.
+              От замены шин до полной настройки трансмиссии — мы предлагаем полный спектр услуг по ремонту велосипедов.
             </p>
           </div>
           <div class="md:w-1/2 image-block">
-            <img src="/images/11.jpg" alt="Разнообразие жанров" class="img-block">
+            <img src="/images/11.png" alt="Широкий спектр услуг" class="img-block">
           </div>
         </div>
       </div>
 
-      <!-- Блок 2: Высокое качество звука -->
+      <!-- Блок 2: Высокое качество ремонта -->
       <div class="content-block fade-in" ref="block2">
         <div class="flex flex-col md:flex-row items-center gap-6">
           <div class="md:w-1/2 image-block order-2 md:order-1">
-            <img src="/images/22.png" alt="Высокое качество звука" class="img-block">
+            <img src="/images/22.png" alt="Высокое качество ремонта" class="img-block">
           </div>
           <div class="md:w-1/2 text-block order-1 md:order-2">
-            <h2 class="text-2xl font-bold mb-4">Высокое качество звука</h2>
+            <h2 class="text-2xl font-bold mb-4">Высокое качество ремонта</h2>
             <p class="fs-5">
-              Все треки доступны в форматах высокого разрешения, включая FLAC и MP3, для идеального звучания.
+              Все работы выполняются с использованием профессиональных инструментов и высококачественных запчастей.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Блок 3: Кураторские плейлисты -->
+      <!-- Блок 3: Индивидуальный подход -->
       <div class="content-block fade-in" ref="block3">
         <div class="flex flex-col md:flex-row items-center gap-6">
           <div class="md:w-1/2 text-block">
-            <h2 class="text-2xl font-bold mb-4">Кураторские плейлисты</h2>
+            <h2 class="text-2xl font-bold mb-4">Индивидуальный подход</h2>
             <p class="fs-5">
-              Наши эксперты создают плейлисты для работы, отдыха, спорта и вечеринок, чтобы музыка всегда была с вами.
+              Мы учитываем особенности каждого велосипеда и пожелания клиента для достижения наилучшего результата.
             </p>
           </div>
           <div class="md:w-1/2 image-block">
-            <img src="/images/33.png" alt="Кураторские плейлисты" class="img-block">
+            <img src="/images/33.jpg" alt="Индивидуальный подход" class="img-block">
           </div>
         </div>
       </div>
 
-      <!-- Блок 4: Эксклюзивные релизы -->
+      <!-- Блок 4: Быстрое обслуживание -->
       <div class="content-block fade-in" ref="block4">
         <div class="flex flex-col md:flex-row items-center gap-6">
           <div class="md:w-1/2 image-block order-2 md:order-1">
-            <img src="/images/44.png" alt="Эксклюзивные релизы" class="img-block">
+            <img src="/images/44.jpg" alt="Быстрое обслуживание" class="img-block">
           </div>
           <div class="md:w-1/2 text-block order-1 md:order-2">
-            <h2 class="text-2xl font-bold mb-4">Эксклюзивные релизы</h2>
+            <h2 class="text-2xl font-bold mb-4">Быстрое обслуживание</h2>
             <p class="fs-5">
-              Новые треки и альбомы от независимых артистов и известных музыкантов, доступные только у нас.
+              Большинство ремонтов выполняется в течение одного дня, чтобы вы могли быстро вернуться на дорогу.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Блок 5: Поддержка сообщества -->
+      <!-- Блок 5: Поддержка велосообщества -->
       <div class="content-block fade-in" ref="block5">
         <div class="flex flex-col md:flex-row items-center gap-6">
           <div class="md:w-1/2 text-block">
-            <h2 class="text-2xl font-bold mb-4">Поддержка сообщества</h2>
+            <h2 class="text-2xl font-bold mb-4">Поддержка велосообщества</h2>
             <p class="fs-5">
-              Мы сотрудничаем с молодыми артистами, помогая им делиться своей музыкой с миром.
+              Мы сотрудничаем с велоклубами и организуем мастер-классы по обслуживанию велосипедов.
             </p>
           </div>
           <div class="md:w-1/2 image-block">
-            <img src="/images/55.png" alt="Поддержка сообщества" class="img-block">
+            <img src="/images/55.png" alt="Поддержка велосообщества" class="img-block">
           </div>
         </div>
       </div>
