@@ -1,33 +1,33 @@
 <template>
   <main>
     <div class="container">
-      <h1 class="page-title">О сервисе по ремонту велосипедов</h1>
+      <h1 class="page-title">О магазине телевизоров</h1>
 
-      <!-- Блок 1: Широкий спектр услуг -->
+      <!-- Блок 1: Широкий ассортимент -->
       <div class="content-block fade-in" ref="block1">
         <div class="flex flex-col md:flex-row items-center gap-6">
           <div class="md:w-1/2 text-block">
-            <h2 class="text-2xl font-bold mb-4">Широкий спектр услуг</h2>
+            <h2 class="text-2xl font-bold mb-4">Широкий ассортимент</h2>
             <p class="fs-5">
-              От замены шин до полной настройки трансмиссии — мы предлагаем полный спектр услуг по ремонту велосипедов.
+              Мы предлагаем телевизоры различных брендов, размеров и технологий для любых потребностей.
             </p>
           </div>
           <div class="md:w-1/2 image-block">
-            <img src="/images/11.png" alt="Широкий спектр услуг" class="img-block">
+            <img src="/images/11.png" alt="Широкий ассортимент" class="img-block">
           </div>
         </div>
       </div>
 
-      <!-- Блок 2: Высокое качество ремонта -->
+      <!-- Блок 2: Высокое качество продукции -->
       <div class="content-block fade-in" ref="block2">
         <div class="flex flex-col md:flex-row items-center gap-6">
           <div class="md:w-1/2 image-block order-2 md:order-1">
-            <img src="/images/22.png" alt="Высокое качество ремонта" class="img-block">
+            <img src="/images/22.png" alt="Высокое качество продукции" class="img-block">
           </div>
           <div class="md:w-1/2 text-block order-1 md:order-2">
-            <h2 class="text-2xl font-bold mb-4">Высокое качество ремонта</h2>
+            <h2 class="text-2xl font-bold mb-4">Высокое качество продукции</h2>
             <p class="fs-5">
-              Все работы выполняются с использованием профессиональных инструментов и высококачественных запчастей.
+              Все телевизоры проходят проверку качества и имеют официальную гарантию.
             </p>
           </div>
         </div>
@@ -39,7 +39,7 @@
           <div class="md:w-1/2 text-block">
             <h2 class="text-2xl font-bold mb-4">Индивидуальный подход</h2>
             <p class="fs-5">
-              Мы учитываем особенности каждого велосипеда и пожелания клиента для достижения наилучшего результата.
+              Наши консультанты помогут выбрать телевизор, учитывая ваши предпочтения и бюджет.
             </p>
           </div>
           <div class="md:w-1/2 image-block">
@@ -48,32 +48,32 @@
         </div>
       </div>
 
-      <!-- Блок 4: Быстрое обслуживание -->
+      <!-- Блок 4: Быстрая доставка -->
       <div class="content-block fade-in" ref="block4">
         <div class="flex flex-col md:flex-row items-center gap-6">
           <div class="md:w-1/2 image-block order-2 md:order-1">
-            <img src="/images/44.jpg" alt="Быстрое обслуживание" class="img-block">
+            <img src="/images/44.png" alt="Быстрая доставка" class="img-block">
           </div>
           <div class="md:w-1/2 text-block order-1 md:order-2">
-            <h2 class="text-2xl font-bold mb-4">Быстрое обслуживание</h2>
+            <h2 class="text-2xl font-bold mb-4">Быстрая доставка</h2>
             <p class="fs-5">
-              Большинство ремонтов выполняется в течение одного дня, чтобы вы могли быстро вернуться на дорогу.
+              Доставка и установка телевизоров в кратчайшие сроки для вашего удобства.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Блок 5: Поддержка велосообщества -->
+      <!-- Блок 5: Поддержка клиентов -->
       <div class="content-block fade-in" ref="block5">
         <div class="flex flex-col md:flex-row items-center gap-6">
           <div class="md:w-1/2 text-block">
-            <h2 class="text-2xl font-bold mb-4">Поддержка велосообщества</h2>
+            <h2 class="text-2xl font-bold mb-4">Поддержка клиентов</h2>
             <p class="fs-5">
-              Мы сотрудничаем с велоклубами и организуем мастер-классы по обслуживанию велосипедов.
+              Мы предоставляем консультации и поддержку на всех этапах покупки.
             </p>
           </div>
           <div class="md:w-1/2 image-block">
-            <img src="/images/55.png" alt="Поддержка велосообщества" class="img-block">
+            <img src="/images/55.jpg" alt="Поддержка клиентов" class="img-block">
           </div>
         </div>
       </div>

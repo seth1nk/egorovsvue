@@ -1,14 +1,14 @@
 <template>
   <main>
     <div class="container">
-      <h1 class="page-title">Наша команда</h1>
+      <h1 class="page-title">Наша команда по продажам телевизоров</h1>
 
       <!-- О сервисе -->
       <div class="content-block fade-in mb-12">
         <div class="text-block">
           <h2 class="text-2xl font-bold text-center mb-4">О нашем сервисе</h2>
           <p class="fs-5 text-center">
-            Сервис по ремонту велосипедов — это профессиональная мастерская, где мы возвращаем вашим велосипедам идеальное состояние. Мы предлагаем широкий спектр услуг и индивидуальный подход.
+            Наш магазин предлагает широкий выбор телевизоров от ведущих брендов. Мы поможем подобрать идеальную модель и обеспечим быструю доставку.
           </p>
         </div>
       </div>
@@ -37,16 +37,16 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="text-center fade-in" :style="{ animationDelay: '0.2s' }">
-            <h3 class="text-xl font-bold mb-2">+ Ремонт и настройка</h3>
-            <p class="text-gray-600">Полный спектр услуг по ремонту и настройке велосипедов любого типа.</p>
+            <h3 class="text-xl font-bold mb-2">+ Подбор телевизоров</h3>
+            <p class="text-gray-600">Помощь в выборе телевизора под ваши потребности и бюджет.</p>
           </div>
           <div class="text-center fade-in" :style="{ animationDelay: '0.4s' }">
-            <h3 class="text-xl font-bold mb-2">+ Замена запчастей</h3>
-            <p class="text-gray-600">Используем только качественные запчасти от проверенных производителей.</p>
+            <h3 class="text-xl font-bold mb-2">+ Доставка и установка</h3>
+            <p class="text-gray-600">Быстрая доставка и профессиональная установка телевизоров.</p>
           </div>
           <div class="text-center fade-in" :style="{ animationDelay: '0.6s' }">
-            <h3 class="text-xl font-bold mb-2">+ Техническое обслуживание</h3>
-            <p class="text-gray-600">Регулярное обслуживание для поддержания вашего велосипеда в отличном состоянии.</p>
+            <h3 class="text-xl font-bold mb-2">+ Консультации</h3>
+            <p class="text-gray-600">Подробные консультации по характеристикам и технологиям.</p>
           </div>
         </div>
       </div>
@@ -62,39 +62,39 @@ export default {
       employees: [
         {
           name: 'Алексей Ковалёв',
-          role: 'Мастер по ремонту велосипедов',
+          role: 'Менеджер по продажам телевизоров',
           experience: '7 лет',
           image: '/images/a1.jpg'
         },
         {
-          name: 'Екатерина Смирнова',
-          role: 'Специалист по подбору запчастей',
+          name: 'Николай Смирнов',
+          role: 'Консультант по подбору техники',
           experience: '5 лет',
-          image: '/images/a2.jpg'
+          image: '/images/a2.png'
         },
         {
           name: 'Дмитрий Попов',
           role: 'Менеджер по клиентскому сервису',
           experience: '9 лет',
-          image: '/images/a3.png'
+          image: '/images/a3.jpg'
         },
         {
           name: 'Анастасия Лебедева',
-          role: 'Техник по настройке трансмиссии',
+          role: 'Специалист по установке телевизоров',
           experience: '4 года',
-          image: '/images/a4.jpeg'
+          image: '/images/a4.jpg'
         },
         {
           name: 'Мария Зайцева',
-          role: 'Специалист по обслуживанию',
+          role: 'Консультант по технологиям экрана',
           experience: '6 лет',
           image: '/images/a5.jpg'
         },
         {
           name: 'Сергей Иванов',
-          role: 'Мастер по ремонту колес',
+          role: 'Менеджер по доставке',
           experience: '3 года',
-          image: '/images/a6.png'
+          image: '/images/a6.jpg'
         }
       ]
     };
