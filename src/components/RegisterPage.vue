@@ -39,7 +39,7 @@
             password: this.password,
           });
 
-          const response = await fetch('https://egorovdnode.onrender.com/auth/register', {
+          const response = await fetch('https://egorovsnode.onrender.com/auth/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
