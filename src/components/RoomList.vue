@@ -65,7 +65,7 @@ export default {
       currentPage: 1,
       totalPages: 0,
       pageSize: 10,
-      backendUrl: 'https://egorovdnode.onrender.com',
+      backendUrl: 'https://egorovsnode.onrender.com',
     };
   },
   async created() {
