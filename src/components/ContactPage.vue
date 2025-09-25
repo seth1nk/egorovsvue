@@ -239,7 +239,7 @@ body {
 
 .card-text {
   font-size: 0.875rem;
-  color: #4b5563;
+  color: #000000;
 }
 
 .grid {
