@@ -26,7 +26,7 @@
         <li v-if="!isAuthenticated"><router-link to="/register" class="button">Зарегистрироваться</router-link></li>
         <li v-if="isAuthenticated" class="welcome-message"><span>Добро пожаловать, {{ username }}</span></li>
         <li v-if="isAuthenticated"><button @click="logout" class="button">Выйти</button></li>
-        <li v-if="isAuthenticated && role === 'admin'"><a href="https://egorovdnode.onrender.com" class="admin-button">Админ-панель</a></li>
+        <li v-if="isAuthenticated && role === 'admin'"><a href="https://egorovsnode.onrender.com" class="admin-button">Админ-панель</a></li>
       </ul>
     </nav>
   </aside>
@@ -47,7 +47,7 @@ export default {
   methods: {
     async checkAuth() {
       try {
-        const response = await fetch('https://egorovdnode.onrender.com/auth/check', {
+        const response = await fetch('https://egorovsnode.onrender.com/auth/check', {
           method: 'GET',
           credentials: 'include',
         });
@@ -72,7 +72,7 @@ export default {
     },
     async logout() {
       try {
-        const response = await fetch('https://egorovdnode.onrender.com/auth/logout', {
+        const response = await fetch('https://egorovsnode.onrender.com/auth/logout', {
           method: 'GET',
           credentials: 'include',
         });
