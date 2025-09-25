@@ -39,7 +39,7 @@ export default {
       room: null,
       loading: true,
       errorMessage: null,
-      backendUrl: 'https://egorovdnode.onrender.com',
+      backendUrl: 'https://egorovsnode.onrender.com',
     };
   },
   async created() {
