@@ -272,6 +272,9 @@ body {
 .text-gray-600 {
   color: #4b5563;
 }
+h3 {
+  color: #000000;
+}
 
 .fade-in {
   opacity: 0;
