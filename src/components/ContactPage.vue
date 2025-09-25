@@ -233,7 +233,7 @@ body {
 .card-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1f2937;
+  color: #000000;
   margin-bottom: 0.5rem;
 }
 
