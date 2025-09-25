@@ -18,29 +18,16 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #1e628a, #3117c4); /* Сине-зеленый градиент */
-    color: #e0e0e0; /* Светло-серый текст */
+    font-family: 'Roboto Mono', monospace;
+    background: linear-gradient(135deg, #800020, #400020) !important;
+    color: #ffffff !important;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 60px;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-button {
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-
-/* Фокус для кнопок и полей ввода */
-.btn:focus, .btn:active:focus, .nav-link:focus, .form-control:focus, .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem #22d3ee, 0 0 0 0.25rem rgba(34, 211, 238, 0.5); /* Бирюзовый акцент */
+    padding-top: 80px;
 }
 
 /* Основной контент */
@@ -49,7 +36,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 100%;
     margin-top: 40px;
     margin-bottom: 120px;
 }
@@ -57,29 +44,31 @@ main {
 .container {
     max-width: 1200px;
     padding: 20px;
-    background: rgba(6, 182, 212, 0.1); /* Полупрозрачный бирюзовый фон */
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Заголовок страницы */
 .page-title {
     text-align: center;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: bold;
     margin-bottom: 20px;
-    color: #fef08a; /* Золотисто-желтый */
-    background: linear-gradient(90deg, #047857, #1e40af); /* Зелено-синий градиент */
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #c70039, #800040) !important;
     padding: 12px;
-    border-radius: 12px;
+    border-radius: 16px;
 }
 
 /* Блоки контента */
 .content-block {
-    background: rgba(6, 182, 212, 0.1); /* Полупрозрачный бирюзовый фон */
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     margin-bottom: 50px;
 }
@@ -90,7 +79,8 @@ main {
 
 .text-block {
     padding: 20px;
-    background: rgba(6, 182, 212, 0.1); /* Полупрозрачный бирюзовый фон */
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -118,18 +108,18 @@ main {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    border: 2px solid #e0f7fa; /* Светло-бирюзовый бордер */
+    border: 2px solid #ffc107 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .img-block:hover {
     transform: scale(1.05);
-    border-color: #facc15; /* Яркий желтый */
+    border-color: #e0a800 !important;
 }
 
 p.fs-5 {
-    color: #e0e0e0; /* Светло-серый текст */
+    color: #ffffff !important;
     font-size: 1.25rem;
 }
 
@@ -153,9 +143,10 @@ p.fs-5 {
 }
 
 .card {
-    background: rgba(6, 182, 212, 0.1); /* Полупрозрачный бирюзовый фон */
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
@@ -163,15 +154,15 @@ p.fs-5 {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 3px solid #22d3ee; /* Бирюзовый бордер */
+    border: 3px solid #ffc107 !important;
     margin: 15px auto;
     object-fit: cover;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card-title,
 .card-text {
-    color: #e0e0e0; /* Светло-серый текст */
+    color: #ffffff !important;
 }
 
 .card-body {
@@ -186,7 +177,7 @@ p.fs-5 {
 
 .card-text strong {
     font-weight: bold;
-    color: #e0e0e0; /* Светло-серый текст */
+    color: #ffffff !important;
 }
 
 /* Поля ввода */
@@ -201,10 +192,11 @@ input[type="file"].form-input {
     margin-bottom: 15px;
     border: none;
     outline: none;
-    background: rgba(16, 185, 129, 0.2); /* Полупрозрачный изумрудный фон */
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
     border-radius: 8px;
     font-size: 1rem;
-    color: #1e293b; /* Темно-синий текст */
+    color: #ffffff !important;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -214,7 +206,7 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus,
 input[type="file"].form-input:focus {
-    background: rgba(16, 185, 129, 0.3); /* Чуть темнее при фокусе */
+    background: rgba(255, 255, 255, 0.2) !important;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -223,8 +215,8 @@ textarea.form-input {
 }
 
 .form-input option {
-    background: rgba(6, 182, 212, 0.95); /* Полупрозрачный бирюзовый фон */
-    color: #1e293b; /* Темно-синий текст */
+    background: rgba(255, 255, 255, 0.95) !important;
+    color: #333 !important;
 }
 
 /* Чекбоксы */
@@ -237,7 +229,7 @@ textarea.form-input {
 .form-checkbox input[type="checkbox"] {
     width: 20px;
     height: 20px;
-    accent-color: #22d3ee; /* Бирюзовый */
+    accent-color: #c70039 !important;
     cursor: pointer;
 }
 
@@ -248,9 +240,9 @@ button,
     border: none;
     border-radius: 8px;
     font-size: 1rem;
-    font-weight: 600;
-    color: #ffffff;
-    background: #22d3ee; /* Бирюзовый фон */
+    font-weight: bold;
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #ffc107, #e0a800) !important;
     transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -258,38 +250,44 @@ button,
 button:hover,
 .btn:hover {
     transform: translateY(-3px);
-    background: #06b6d4; /* Темно-бирюзовый при наведении */
+    background: linear-gradient(135deg, #e0a800, #b38800) !important;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary {
-    background: #22d3ee; /* Бирюзовый */
-    color: #ffffff;
+    background: linear-gradient(135deg, #ffc107, #e0a800) !important;
+    color: #ffffff !important;
 }
 
 .btn-primary:hover {
-    background: #06b6d4; /* Темно-бирюзовый */
+    background: linear-gradient(135deg, #e0a800, #b38800) !important;
     transform: scale(1.05);
 }
 
 .btn-secondary {
-    background: rgba(16, 185, 129, 0.2); /* Полупрозрачный изумрудный фон */
-    color: #1e293b; /* Темно-синий текст */
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+    color: #ffffff !important;
 }
 
 .btn-secondary:hover {
-    background: rgba(16, 185, 129, 0.3); /* Чуть темнее при наведении */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .btn-danger {
-    background: #dc2626; /* Темно-красный */
-    color: #ffffff;
+    background: #c70039 !important;
+    color: #ffffff !important;
 }
 
 .btn-danger:hover {
-    background: #b91c1c; /* Темнее красный */
+    background: #a3002d !important;
     transform: translateY(-3px);
+}
+
+/* Фокус для кнопок и полей ввода */
+.btn:focus, .btn:active:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem #ffc107, 0 0 0 0.25rem rgba(255, 193, 7, 0.5) !important;
 }
 
 /* Формы */
@@ -303,44 +301,48 @@ form {
 /* Таблицы */
 .table-container {
     width: 100%;
-    max-width: 1200px;
-    background: rgba(6, 182, 212, 0.1); /* Полупрозрачный бирюзовый фон */
-    border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-    padding: 24px;
+    max-width: 1400px;
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
     margin-bottom: 20px;
     overflow-x: auto;
 }
 
 .table {
     width: 100%;
+    min-width: 1200px;
     border-collapse: separate;
     border-spacing: 0;
-    background: rgba(6, 182, 212, 0.1); /* Полупрозрачный бирюзовый фон */
-    color: #e0e0e0; /* Светло-серый текст */
-    border-radius: 8px;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
 }
 
 .table th,
 .table td {
     padding: 15px;
     text-align: center;
-    border-bottom: 1px solid rgba(6, 182, 212, 0.3); /* Бирюзовый бордер */
-    border-right: 1px solid rgba(6, 182, 212, 0.3);
-    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ffffff !important;
 }
 
 .table th {
-    background: rgba(16, 185, 129, 0.3); /* Полупрозрачный изумрудный фон */
-    color: #e0e0e0; /* Светло-серый текст */
-    font-weight: 600;
+    background: linear-gradient(135deg, #c70039, #800040) !important;
+    color: #ffffff !important;
+    font-weight: bold;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .table tbody tr:hover {
-    background: rgba(6, 182, 212, 0.2); /* Легкий бирюзовый фон при наведении */
+    background: rgba(255, 255, 255, 0.05) !important;
 }
 
 .table thead th:first-child,
@@ -352,144 +354,138 @@ form {
     border-bottom: none;
 }
 
-/* Настройка ширины столбцов для таблицы заказов */
-.orders-table th:nth-child(1),
-.orders-table td:nth-child(1) { /* ID */
+/* Настройка ширины столбцов для таблицы бронирований */
+.bookings-table th:nth-child(1),
+.bookings-table td:nth-child(1) { /* ID */
     width: 5%;
     min-width: 50px;
 }
 
-.orders-table th:nth-child(2),
-.orders-table td:nth-child(2) { /* Имя клиента */
-    width: 12%;
-    min-width: 100px;
-    white-space: normal;
-    word-break: break-word;
-}
-
-.orders-table th:nth-child(3),
-.orders-table td:nth-child(3) { /* Email клиента */
-    width: 15%;
-    min-width: 120px;
-    white-space: normal;
-    word-break: break-word;
-}
-
-.orders-table th:nth-child(4),
-.orders-table td:nth-child(4) { /* Общая сумма */
-    width: 10%;
-    min-width: 80px;
-}
-
-.orders-table th:nth-child(5),
-.orders-table td:nth-child(5) { /* Статус */
-    width: 10%;
-    min-width: 80px;
-}
-
-.orders-table th:nth-child(6),
-.orders-table td:nth-child(6) { /* Метод оплаты */
-    width: 12%;
-    min-width: 100px;
-    white-space: normal;
-    word-break: break-word;
-}
-
-.orders-table th:nth-child(7),
-.orders-table td:nth-child(7) { /* Метод доставки */
-    width: 12%;
-    min-width: 100px;
-    white-space: normal;
-    word-break: break-word;
-}
-
-.orders-table th:nth-child(8),
-.orders-table td:nth-child(8) { /* Адрес доставки */
-    width: 15%;
-    min-width: 120px;
-    white-space: normal;
-    word-break: break-word;
-}
-
-.orders-table th:nth-child(9),
-.orders-table td:nth-child(9) { /* Фото */
+.bookings-table th:nth-child(2),
+.bookings-table td:nth-child(2) { /* ID номера */
     width: 8%;
+    min-width: 60px;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.bookings-table th:nth-child(3),
+.bookings-table td:nth-child(3) { /* Имя гостя */
+    width: 15%;
+    min-width: 80px;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.bookings-table th:nth-child(4),
+.bookings-table td:nth-child(4) { /* Дата заезда */
+    width: 12%;
+    min-width: 70px;
+}
+
+.bookings-table th:nth-child(5),
+.bookings-table td:nth-child(5) { /* Дата выезда */
+    width: 12%;
+    min-width: 70px;
+}
+
+.bookings-table th:nth-child(6),
+.bookings-table td:nth-child(6) { /* Общая стоимость */
+    width: 10%;
+    min-width: 60px;
+}
+
+.bookings-table th:nth-child(7),
+.bookings-table td:nth-child(7) { /* Подтверждено */
+    width: 10%;
     min-width: 80px;
 }
 
-.orders-table th:nth-child(10),
-.orders-table td:nth-child(10) { /* Действия */
+.bookings-table th:nth-child(8),
+.bookings-table td:nth-child(8) { /* Контактный телефон */
     width: 12%;
-    min-width: 100px;
+    min-width: 70px;
+    white-space: normal;
+    word-break: break-word;
 }
 
-/* Настройка ширины столбцов для таблицы парфюмов */
-.parfumes-table th:nth-child(1),
-.parfumes-table td:nth-child(1) { /* ID */
+.bookings-table th:nth-child(9),
+.bookings-table td:nth-child(9) { /* Фото */
+    width: 8%;
+    min-width: 60px;
+}
+
+.bookings-table th:nth-child(10),
+.bookings-table td:nth-child(10) { /* Действия */
+    width: 8%;
+    min-width: 60px;
+}
+
+/* Настройка ширины столбцов для таблицы номеров */
+.rooms-table th:nth-child(1),
+.rooms-table td:nth-child(1) { /* ID */
     width: 5%;
     min-width: 50px;
 }
 
-.parfumes-table th:nth-child(2),
-.parfumes-table td:nth-child(2) { /* Название */
+.rooms-table th:nth-child(2),
+.rooms-table td:nth-child(2) { /* Номер комнаты */
+    width: 10%;
+    min-width: 60px;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.rooms-table th:nth-child(3),
+.rooms-table td:nth-child(3) { /* Тип номера */
     width: 15%;
-    min-width: 120px;
-    white-space: normal;
-    word-break: break-word;
-}
-
-.parfumes-table th:nth-child(3),
-.parfumes-table td:nth-child(3) { /* Тип */
-    width: 10%;
     min-width: 80px;
     white-space: normal;
     word-break: break-word;
 }
 
-.parfumes-table th:nth-child(4),
-.parfumes-table td:nth-child(4) { /* Объем (мл) */
-    width: 8%;
-    min-width: 80px;
+.rooms-table th:nth-child(4),
+.rooms-table td:nth-child(4) { /* Вместимость */
+    width: 10%;
+    min-width: 60px;
 }
 
-.parfumes-table th:nth-child(5),
-.parfumes-table td:nth-child(5) { /* Цена */
+.rooms-table th:nth-child(5),
+.rooms-table td:nth-child(5) { /* Цена за ночь */
+    width: 10%;
+    min-width: 60px;
+}
+
+.rooms-table th:nth-child(6),
+.rooms-table td:nth-child(6) { /* Доступен */
     width: 10%;
     min-width: 80px;
 }
 
-.parfumes-table th:nth-child(6),
-.parfumes-table td:nth-child(6) { /* В наличии */
-    width: 8%;
-    min-width: 80px;
-}
-
-.parfumes-table th:nth-child(7),
-.parfumes-table td:nth-child(7) { /* Описание */
+.rooms-table th:nth-child(7),
+.rooms-table td:nth-child(7) { /* Описание */
     width: 20%;
-    min-width: 150px;
-    white-space: normal;
-    word-break: break-word;
-}
-
-.parfumes-table th:nth-child(8),
-.parfumes-table td:nth-child(8) { /* Гендер */
-    width: 10%;
-    min-width: 80px;
-    white-space: normal;
-    word-break: break-word;
-}
-
-.parfumes-table th:nth-child(9),
-.parfumes-table td:nth-child(9) { /* Фото */
-    width: 8%;
-    min-width: 80px;
-}
-
-.parfumes-table th:nth-child(10),
-.parfumes-table td:nth-child(10) { /* Действия */
-    width: 12%;
     min-width: 100px;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.rooms-table th:nth-child(8),
+.rooms-table td:nth-child(8) { /* Фото */
+    width: 8%;
+    min-width: 60px;
+}
+
+.rooms-table th:nth-child(9),
+.rooms-table td:nth-child(9) { /* Этаж */
+    width: 8%;
+    min-width: 60px;
+}
+
+.rooms-table th:nth-child(10),
+.rooms-table td:nth-child(10) { /* Действия */
+    width: 8%;
+    min-width: 60px;
 }
 
 /* Статусы */
@@ -497,36 +493,37 @@ form {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 5px;
-    font-weight: 600;
-    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #ffffff !important;
 }
 
 .status.available {
-    background: #047857; /* Темно-зеленый */
+    background: #32a852 !important;
 }
 
 .status.unavailable {
-    background: #dc2626; /* Темно-красный */
+    background: #c70039 !important;
 }
 
 .status.pending {
-    background: #22d3ee; /* Бирюзовый */
+    background: #ffc107 !important;
 }
 
 .status.in-progress {
-    background: #06b6d4; /* Темно-бирюзовый */
+    background: #e0a800 !important;
 }
 
 .status.completed {
-    background: #047857; /* Темно-зеленый */
+    background: #32a852 !important;
 }
 
 .status.cancelled {
-    background: #dc2626; /* Темно-красный */
+    background: #c70039 !important;
 }
 
 .status.on-remote {
-    background: #dc2626; /* Темно-красный */
+    background: #c70039 !important;
 }
 
 /* Пагинация */
@@ -544,28 +541,29 @@ form {
 
 .pagination-item {
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 14px;
-    font-weight: 600;
-    color: #ffffff;
-    background: #22d3ee; /* Бирюзовый */
+    font-weight: bold;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(10px);
     text-decoration: none;
-    transition: transform 0.2s ease, background 0.2s ease;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .pagination-item:hover:not(.disabled) {
     transform: translateY(-3px);
-    background: #06b6d4; /* Темно-бирюзовый */
+    background: rgba(255, 255, 255, 0.3) !important;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .pagination-item.active {
-    background: #06b6d4; /* Темно-бирюзовый */
+    background: #c70039 !important;
 }
 
 .pagination-item.disabled {
-    background: #6b7280; /* Серый */
+    background: #6b7280 !important;
     cursor: not-allowed;
     box-shadow: none;
 }
@@ -579,38 +577,37 @@ form {
 
 .action-btn {
     background: none;
-    color: #22d3ee; /* Бирюзовый */
+    color: #ffffff !important;
     font-size: 1.2rem;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .action-btn:hover {
     transform: scale(1.2);
-    color: #06b6d4; /* Темно-бирюзовый */
 }
 
 .view-icon {
-    color: #22d3ee; /* Бирюзовый */
+    color: #ffffff !important;
 }
 
 .view-icon:hover {
-    color: #047857; /* Темно-зеленый */
+    color: #17a2b8 !important;
 }
 
 .edit-icon {
-    color: #22d3ee; /* Бирюзовый */
+    color: #ffffff !important;
 }
 
 .edit-icon:hover {
-    color: #facc15; /* Яркий желтый */
+    color: #ffc107 !important;
 }
 
 .delete-icon {
-    color: #22d3ee; /* Бирюзовый */
+    color: #ffffff !important;
 }
 
 .delete-icon:hover {
-    color: #dc2626; /* Темно-красный */
+    color: #c70039 !important;
 }
 
 /* Изображения продуктов */
@@ -620,12 +617,12 @@ form {
     border-radius: 6px;
     object-fit: cover;
     vertical-align: middle;
-    border: 2px solid #e0f7fa; /* Светло-бирюзовый бордер */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ffc107 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .product-image:hover {
-    border-color: #facc15; /* Яркий желтый */
+    border-color: #e0a800 !important;
     transform: scale(1.03);
 }
 
@@ -720,10 +717,10 @@ form {
         font-size: 0.85rem;
     }
 
-    .orders-table th,
-    .orders-table td,
-    .parfumes-table th,
-    .parfumes-table td {
+    .bookings-table th,
+    .bookings-table td,
+    .rooms-table th,
+    .rooms-table td {
         min-width: 60px;
     }
 }

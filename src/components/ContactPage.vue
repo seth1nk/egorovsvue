@@ -1,19 +1,19 @@
 <template>
   <main>
     <div class="container">
-      <h1 class="page-title">Наша команда по продажам телевизоров</h1>
+      <h1 class="page-title">Наша команда гостиницы</h1>
 
       <!-- О сервисе -->
       <div class="content-block fade-in mb-12">
         <div class="text-block">
-          <h2 class="text-2xl font-bold text-center mb-4">О нашем сервисе</h2>
+          <h2 class="text-2xl font-bold text-center mb-4">О нашей гостинице</h2>
           <p class="fs-5 text-center">
-            Наш магазин предлагает широкий выбор телевизоров от ведущих брендов. Мы поможем подобрать идеальную модель и обеспечим быструю доставку.
+            Наша гостиница предлагает комфортабельные номера и первоклассный сервис. Мы обеспечим вам незабываемый отдых в центре города.
           </p>
         </div>
       </div>
 
-      <!-- Фотогалерея консультантов -->
+      <!-- Фотогалерея сотрудников -->
       <div class="mb-12">
         <h2 class="text-2xl font-bold text-center mb-6">Наша команда</h2>
         <div class="employees-row">
@@ -37,16 +37,16 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="text-center fade-in" :style="{ animationDelay: '0.2s' }">
-            <h3 class="text-xl font-bold mb-2">+ Подбор телевизоров</h3>
-            <p class="text-gray-600">Помощь в выборе телевизора под ваши потребности и бюджет.</p>
+            <h3 class="text-xl font-bold mb-2">+ Бронирование номеров</h3>
+            <p class="text-gray-600">Удобное бронирование номеров под ваши даты и предпочтения.</p>
           </div>
           <div class="text-center fade-in" :style="{ animationDelay: '0.4s' }">
-            <h3 class="text-xl font-bold mb-2">+ Доставка и установка</h3>
-            <p class="text-gray-600">Быстрая доставка и профессиональная установка телевизоров.</p>
+            <h3 class="text-xl font-bold mb-2">+ Обслуживание 24/7</h3>
+            <p class="text-gray-600">Круглосуточное обслуживание и помощь гостям.</p>
           </div>
           <div class="text-center fade-in" :style="{ animationDelay: '0.6s' }">
-            <h3 class="text-xl font-bold mb-2">+ Консультации</h3>
-            <p class="text-gray-600">Подробные консультации по характеристикам и технологиям.</p>
+            <h3 class="text-xl font-bold mb-2">+ Дополнительные услуги</h3>
+            <p class="text-gray-600">Экскурсии, трансфер и другие услуги для вашего комфорта.</p>
           </div>
         </div>
       </div>
@@ -62,39 +62,39 @@ export default {
       employees: [
         {
           name: 'Алексей Ковалёв',
-          role: 'Менеджер по продажам телевизоров',
+          role: 'Администратор гостиницы',
           experience: '7 лет',
-          image: '/images/a1.jpg'
+          image: '/images/a3.png'
         },
         {
           name: 'Николай Смирнов',
-          role: 'Консультант по подбору техники',
+          role: 'Консультант по бронированию',
           experience: '5 лет',
-          image: '/images/a2.png'
+          image: '/images/a4.png'
         },
         {
-          name: 'Дмитрий Попов',
-          role: 'Менеджер по клиентскому сервису',
+          name: 'Дарья Попова',
+          role: 'Менеджер по обслуживанию гостей',
           experience: '9 лет',
-          image: '/images/a3.jpg'
+          image: '/images/a5.png'
         },
         {
           name: 'Анастасия Лебедева',
-          role: 'Специалист по установке телевизоров',
+          role: 'Специалист по сервису',
           experience: '4 года',
-          image: '/images/a4.jpg'
+          image: '/images/a1.jpg'
         },
         {
           name: 'Мария Зайцева',
-          role: 'Консультант по технологиям экрана',
+          role: 'Консультант по экскурсиям',
           experience: '6 лет',
-          image: '/images/a5.jpg'
+          image: '/images/a2.jpg'
         },
         {
           name: 'Сергей Иванов',
-          role: 'Менеджер по доставке',
+          role: 'Менеджер по трансферу',
           experience: '3 года',
-          image: '/images/a6.jpg'
+          image: '/images/a6.png'
         }
       ]
     };

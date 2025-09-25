@@ -1,9 +1,10 @@
+```vue
 <template>
   <header>
     <div class="wrapper">
       <router-view></router-view>
     </div>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   </header>
   <main>
     <TheWelcome />
@@ -19,8 +20,8 @@
         <li><router-link to="/" class="button">Главная</router-link></li>
         <li><router-link to="/about" class="button">О нас</router-link></li>
         <li><router-link to="/contact" class="button">Контакты</router-link></li>
-        <li v-if="isAuthenticated"><router-link to="/televisions" class="button">Телевизоры</router-link></li>
-        <li v-if="isAuthenticated"><router-link to="/sales" class="button">Продажи</router-link></li>
+        <li v-if="isAuthenticated"><router-link to="/rooms" class="button">Комнаты</router-link></li>
+        <li v-if="isAuthenticated"><router-link to="/bookings" class="button">Бронирования</router-link></li>
         <li v-if="!isAuthenticated"><router-link to="/login" class="button">Войти</router-link></li>
         <li v-if="!isAuthenticated"><router-link to="/register" class="button">Зарегистрироваться</router-link></li>
         <li v-if="isAuthenticated" class="welcome-message"><span>Добро пожаловать, {{ username }}</span></li>
@@ -103,16 +104,15 @@ export default {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  background: rgba(6, 182, 212, 0.1); /* Полупрозрачный бирюзовый фон */
-  backdrop-filter: blur(10px);
-  border-left: 1px solid rgba(6, 182, 212, 0.3); /* Бирюзовый бордер */
+  background: #ffffff !important; /* Белый фон */
+  border-left: 1px solid rgba(199, 0, 57, 0.3) !important; /* Бордовый бордер */
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Логотип */
@@ -125,14 +125,14 @@ export default {
   max-width: 100px;
   height: auto;
   border-radius: 5px;
-  border: 2px solid #e0f7fa; /* Светло-бирюзовый бордер */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ffc107 !important; /* Золотистый бордер */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .logo:hover {
   transform: scale(1.05);
-  border-color: #facc15; /* Яркий желтый */
+  border-color: #e0a800 !important; /* Тёмно-золотистый при наведении */
 }
 
 /* Список кнопок */
@@ -151,8 +151,8 @@ export default {
   display: block;
   width: 180px;
   padding: 10px 15px;
-  background: #047857; /* Темно-зеленый фон */
-  color: #ffffff; /* Белый текст */
+  background: #c70039 !important; /* Бордовый фон */
+  color: #ffffff !important; /* Белый текст */
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
@@ -162,7 +162,7 @@ export default {
 }
 
 .button:hover {
-  background: #059669; /* Светлый зеленый при ховере */
+  background: #a3002d !important; /* Тёмно-бордовый при наведении */
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
@@ -172,8 +172,8 @@ export default {
   display: block;
   width: auto;
   padding: 10px 15px;
-  background: linear-gradient(135deg, #fef08a, #facc15); /* Золотисто-желтый градиент */
-  color: #1e293b; /* Темно-синий текст */
+  background: linear-gradient(135deg, #ffc107, #e0a800) !important; /* Золотисто-желтый градиент */
+  color: #ffffff !important; /* Белый текст */
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
@@ -184,7 +184,7 @@ export default {
 }
 
 .admin-button:hover {
-  background: linear-gradient(135deg, #facc15, #fef08a); /* Обратный золотисто-желтый градиент */
+  background: linear-gradient(135deg, #e0a800, #b38800) !important; /* Тёмно-золотистый градиент */
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
@@ -195,10 +195,10 @@ export default {
   width: auto;
   padding: 10px 15px;
   font-size: 16px;
-  color: #e0e0e0; /* Светло-серый текст */
+  color: #ffffff !important; /* Белый текст */
   font-weight: 600;
   text-align: center;
-  background: rgba(16, 185, 129, 0.2); /* Полупрозрачный изумрудный фон */
+  background: rgba(199, 0, 57, 0.2) !important; /* Полупрозрачный бордовый фон */
   border-radius: 8px;
 }
 
@@ -226,3 +226,4 @@ export default {
   }
 }
 </style>
+```

@@ -1,33 +1,33 @@
 <template>
   <main>
     <div class="container">
-      <h1 class="page-title">О магазине телевизоров</h1>
+      <h1 class="page-title">О нашей гостинице</h1>
 
-      <!-- Блок 1: Широкий ассортимент -->
+      <!-- Блок 1: Разнообразие номеров -->
       <div class="content-block fade-in" ref="block1">
         <div class="flex flex-col md:flex-row items-center gap-6">
           <div class="md:w-1/2 text-block">
-            <h2 class="text-2xl font-bold mb-4">Широкий ассортимент</h2>
+            <h2 class="text-2xl font-bold mb-4">Разнообразие номеров</h2>
             <p class="fs-5">
-              Мы предлагаем телевизоры различных брендов, размеров и технологий для любых потребностей.
+              Мы предлагаем номера различных категорий: от уютных стандартных до роскошных люксов для любых предпочтений.
             </p>
           </div>
           <div class="md:w-1/2 image-block">
-            <img src="/images/11.png" alt="Широкий ассортимент" class="img-block">
+            <img src="/images/11.jpeg" alt="Разнообразие номеров" class="img-block">
           </div>
         </div>
       </div>
 
-      <!-- Блок 2: Высокое качество продукции -->
+      <!-- Блок 2: Высокий уровень сервиса -->
       <div class="content-block fade-in" ref="block2">
         <div class="flex flex-col md:flex-row items-center gap-6">
           <div class="md:w-1/2 image-block order-2 md:order-1">
-            <img src="/images/22.png" alt="Высокое качество продукции" class="img-block">
+            <img src="/images/22.jpg" alt="Высокий уровень сервиса" class="img-block">
           </div>
           <div class="md:w-1/2 text-block order-1 md:order-2">
-            <h2 class="text-2xl font-bold mb-4">Высокое качество продукции</h2>
+            <h2 class="text-2xl font-bold mb-4">Высокий уровень сервиса</h2>
             <p class="fs-5">
-              Все телевизоры проходят проверку качества и имеют официальную гарантию.
+              Наши услуги включают круглосуточное обслуживание и гарантированное качество пребывания.
             </p>
           </div>
         </div>
@@ -39,7 +39,7 @@
           <div class="md:w-1/2 text-block">
             <h2 class="text-2xl font-bold mb-4">Индивидуальный подход</h2>
             <p class="fs-5">
-              Наши консультанты помогут выбрать телевизор, учитывая ваши предпочтения и бюджет.
+              Наши сотрудники помогут выбрать номер и организуют отдых, учитывая ваши пожелания.
             </p>
           </div>
           <div class="md:w-1/2 image-block">
@@ -48,32 +48,32 @@
         </div>
       </div>
 
-      <!-- Блок 4: Быстрая доставка -->
+      <!-- Блок 4: Удобное расположение -->
       <div class="content-block fade-in" ref="block4">
         <div class="flex flex-col md:flex-row items-center gap-6">
           <div class="md:w-1/2 image-block order-2 md:order-1">
-            <img src="/images/44.png" alt="Быстрая доставка" class="img-block">
+            <img src="/images/44.png" alt="Удобное расположение" class="img-block">
           </div>
           <div class="md:w-1/2 text-block order-1 md:order-2">
-            <h2 class="text-2xl font-bold mb-4">Быстрая доставка</h2>
+            <h2 class="text-2xl font-bold mb-4">Удобное расположение</h2>
             <p class="fs-5">
-              Доставка и установка телевизоров в кратчайшие сроки для вашего удобства.
+              Гостиница расположена в центре города, рядом с основными достопримечательностями.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Блок 5: Поддержка клиентов -->
+      <!-- Блок 5: Поддержка гостей -->
       <div class="content-block fade-in" ref="block5">
         <div class="flex flex-col md:flex-row items-center gap-6">
           <div class="md:w-1/2 text-block">
-            <h2 class="text-2xl font-bold mb-4">Поддержка клиентов</h2>
+            <h2 class="text-2xl font-bold mb-4">Поддержка гостей</h2>
             <p class="fs-5">
-              Мы предоставляем консультации и поддержку на всех этапах покупки.
+              Мы предоставляем круглосуточную поддержку для комфортного пребывания.
             </p>
           </div>
           <div class="md:w-1/2 image-block">
-            <img src="/images/55.jpg" alt="Поддержка клиентов" class="img-block">
+            <img src="/images/55.jpg" alt="Поддержка гостей" class="img-block">
           </div>
         </div>
       </div>
